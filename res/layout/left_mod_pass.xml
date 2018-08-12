@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <RelativeLayout
+        android:id="@+id/left_mod_pass_rela"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/backgroundColor_low" >
+
+        <EditText
+            android:id="@+id/left_mod_pass_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:background="@color/backgroundColor_low"
+            android:hint="原始密码"
+            android:singleLine="true"
+            android:password="true"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/left_mod_pass_switch_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            style="@style/CheckBoxTheme"
+             />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="#BABABA" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/left_mod_pass_rela"
+        android:background="@color/backgroundColor_low" >
+
+        <EditText
+            android:id="@+id/left_mod_pass_end"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:background="@color/backgroundColor_low"
+            android:hint="新密码"
+            android:singleLine="true"
+            android:password="true" 
+            android:textSize="15dp"
+           />
+
+        <CheckBox
+            android:id="@+id/left_mod_pass_switch_end"
+            style="@style/CheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:checked="false" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#BABABA" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/left_mod_pass_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/right_pen_max"
+        android:text="确定"
+        android:textColor="#41AFAF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

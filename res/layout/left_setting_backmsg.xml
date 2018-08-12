@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <EditText
+        android:id="@+id/left_setting_backmsg_edit_01"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/left_backmsg_background"
+        android:hint="感谢您的建议"
+        android:minLines="5"
+        android:paddingLeft="5dp"
+        android:textSize="15dp"
+        android:gravity="top" />
+
+    <ImageView
+        android:id="@+id/left_setting_backmsg_line_01"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_setting_backmsg_edit_01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#BABABA" />
+
+    <EditText
+        android:id="@+id/left_setting_backmsg_edit_02"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/left_setting_backmsg_line_01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/left_backmsg_background"
+        android:hint="您的联系方式"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/left_setting_backmsg_line_02"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/left_setting_backmsg_edit_02"
+        android:background="#BABABA" />
+
+    <Button
+        android:id="@+id/left_setting_backmsg_btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/left_setting_backmsg_line_02"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/right_pen_max"
+        android:text="提交"
+        android:textColor="#41AFAF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="backgroundColor">#DBDBDB</color>
+    <color name="rippelColor">#DBDBDB</color>
+    <color name="lineColor">#BABABA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#41AFAF</color>
+    <color name="bachgroundColor_touch">#CCCCCC</color>
+    <color name="backgroundColor_low">#E6E6E6</color>
+    <color name="black">#000000</color>
+    
+    <color name="result_view">#b0000000</color>
+      <color name="viewfinder_mask">#60000000</color>
+      <color name="possible_result_points">#c0ffff00</color> 
+</resources>

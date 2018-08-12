@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/green" >
+
+        <include layout="@layout/left_mod_titlebar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="7"
+        android:background="@color/green" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <com.example.smartlife.CircularImage
+                android:id="@+id/left_cover_user_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/left_mod_txt_nic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_cover_user_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="昵 称"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/left_mod_txt_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_mod_txt_nic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="显 示 账 号"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3" >
+
+        <RelativeLayout
+            android:id="@+id/left_mod_rela"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:background="@color/backgroundColor_low" >
+
+            <TextView
+                android:id="@+id/left_mod_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="修改昵称:"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/left_mod_editTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/left_mod_txt"
+                android:background="@color/backgroundColor_low"
+                android:hint="新昵称"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/left_mod_line_01"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/left_mod_rela"
+            android:layout_marginLeft="10dp"
+            android:background="#BABABA" />
+
+        <RelativeLayout
+            android:id="@+id/left_mod_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/left_mod_line_01"
+            android:background="@color/backgroundColor_low"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="修改密码"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/left_mod_pass"
+            android:background="#BABABA" />
+
+        <Button
+            android:id="@+id/left_mod_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/right_pen_max"
+            android:text="保存"
+            android:textColor="#41AFAF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>

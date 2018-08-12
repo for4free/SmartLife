@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor_low" >
+
+    <TextView
+        android:id="@+id/dialog_mod_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundColor_low"
+        android:gravity="center"
+        android:text="修改头像"
+        android:textColor="@color/green" />
+
+    <ImageView
+        android:id="@+id/dialog_mod_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_mod_txt"
+        android:background="@color/lineColor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_mod_line"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/dialog_mod_img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="110dp" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/dialog_b_txt_01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/me_detail_photograph" 
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_b_txt_01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="选择图片" 
+                android:textColor="#000000"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dialog_mod_line_s"
+            android:layout_width="1dp"
+            android:layout_height="110dp"
+            android:background="@color/lineColor" />
+
+        <RelativeLayout
+            android:id="@+id/dialog_mod_img_camera"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/dialog_b_txt_02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/me_detail_camera" 
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_b_txt_02"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="拍摄照片" 
+                android:textColor="#000000"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

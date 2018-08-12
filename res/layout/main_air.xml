@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical" >
+
+    <com.example.smartlife.PullDownScrollView
+        android:id="@+id/refresh_root"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="3"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_background" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="2" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="vertical" >
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1" >
+
+                                    <ProgressBar
+                                        android:id="@+id/main_air_btm_temp_t"
+                                        style="@style/StyleProgressBarMini_01"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:max="40"
+                                        android:progress="20" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="温度"
+                                        android:textColor="#ffffff"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:id="@+id/main_air_btm_temp_txt_t"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="10dp"
+                                        android:text="20 ℃"
+                                        android:textColor="#000000"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1" >
+
+                                    <ProgressBar
+                                        android:id="@+id/main_air_btm_hum_t"
+                                        style="@style/StyleProgressBarMini_02"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:max="100"
+                                        android:progress="20" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="湿度"
+                                        android:textColor="#ffffff"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:id="@+id/main_air_btm_hum_txt_t"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="10dp"
+                                        android:text="20 %"
+                                        android:textColor="#000000"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1" >
+
+                                    <ProgressBar
+                                        android:id="@+id/main_air_btm_light_t"
+                                        style="@style/StyleProgressBarMini_03"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:max="500"
+                                        android:progress="320" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="光照强度"
+                                        android:textColor="#ffffff"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:id="@+id/main_air_btm_light_txt_t"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="10dp"
+                                        android:text="320 LUX"
+                                        android:textColor="#000000"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1" >
+
+                                    <ProgressBar
+                                        android:id="@+id/main_air_btm_pm25_t"
+                                        style="@style/StyleProgressBarMini_04"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:max="15"
+                                        android:progress="6" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="PM2.5"
+                                        android:textColor="#ffffff"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:id="@+id/main_air_btm_pm25_txt_t"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="10dp"
+                                        android:text="16 μg/m³"
+                                        android:textColor="#000000"
+                                        android:textSize="15dp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/main_air_change"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="8"
+                            android:background="#4a86e8"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text="一键\n改善"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/main_background_min" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="8dp" >
+
+                        <TextView
+                            android:id="@+id/main_air_txt_title_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="燃气传感器" />
+
+                        <ProgressBar
+                            android:id="@+id/main_air_btm_txt_01"
+                            style="@style/StyleProgressBarMini_03"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_above="@+id/main_air_img_01"
+                            android:layout_below="@+id/main_air_txt_title_01"
+                            android:layout_marginTop="5dp"
+                            android:max="20"
+                            android:progress="5" />
+
+                        <TextView
+                            android:id="@+id/main_air_txt_set_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="燃气浓度 0.5%" />
+
+                        <ImageView
+                            android:id="@+id/main_air_img_01"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/setting_version" />
+
+                        <TextView
+                            android:id="@+id/main_air_txt_01"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_air_btm_txt_01"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/main_air_img_01"
+                            android:text="监测到您未关闭燃气阀门" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/main_background_min" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="8dp" >
+
+                        <TextView
+                            android:id="@+id/main_air_txt_title_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="烟雾传感器" />
+
+                        <ProgressBar
+                            android:id="@+id/main_air_btm_txt_02"
+                            style="@style/StyleProgressBarMini_03"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_above="@+id/main_air_img_02"
+                            android:layout_below="@+id/main_air_txt_title_02"
+                            android:layout_marginTop="5dp"
+                            android:max="20"
+                            android:progress="3" />
+
+                        <TextView
+                            android:id="@+id/main_air_txt_set_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="烟雾浓度 0.3%" />
+
+                        <ImageView
+                            android:id="@+id/main_air_img_02"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/setting_version" />
+
+                        <TextView
+                            android:id="@+id/main_air_txt_02"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_air_btm_txt_02"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/main_air_img_02"
+                            android:text="未监测到火情现象" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.example.smartlife.PullDownScrollView>
+
+</LinearLayout>

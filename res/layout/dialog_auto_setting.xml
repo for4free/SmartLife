@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor_low" >
+
+    <TextView
+        android:id="@+id/dialog_auto_setting_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundColor_low"
+        android:gravity="center"
+        android:text="长按添加设备"
+        android:textColor="@color/green" />
+
+    <ImageView
+        android:id="@+id/dialog_auto_setting_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/dialog_auto_setting_txt"
+        android:background="#BABABA" />
+
+    <ListView
+        android:id="@+id/dialog_auto_setting_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+       android:layout_below="@+id/dialog_auto_setting_line"
+        />
+
+
+
+
+</RelativeLayout>

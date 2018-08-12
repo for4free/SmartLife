@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <RelativeLayout
+        android:id="@+id/left_setting_hand"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:id="@+id/left_setting_hand_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_setting_gesture_lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/left_setting_hand_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="指纹解锁"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/left_setting_line_01"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_setting_hand"
+        android:background="#BABABA" />
+
+    <RelativeLayout
+        android:id="@+id/left_setting_video"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/left_setting_line_01"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:id="@+id/left_setting_video_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_setting_play_mode" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/left_setting_video_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="播放视频"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/left_setting_video_rImg"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/right" />
+
+        <TextView
+            android:id="@+id/left_setting_video_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/left_setting_video_rImg"
+            android:text="仅在WIFI下播放"
+            android:textColor="@color/lineColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/left_setting_line_02"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_setting_video"
+        android:background="#BABABA" />
+
+    <RelativeLayout
+        android:id="@+id/left_setting_bell"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/left_setting_line_02"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:id="@+id/left_setting_bell_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/setting_ring" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/left_setting_bell_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="铃声设置"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/left_setting_bell_rImg"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/right" />
+
+        <TextView
+            android:id="@+id/left_setting_bell_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/left_setting_bell_rImg"
+            android:text="DoorBell"
+            android:textColor="@color/lineColor" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/left_setting_line_04"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_setting_bell"
+        android:background="#BABABA" />
+
+    <RelativeLayout
+        android:id="@+id/left_setting_vison"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/left_setting_line_04"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:id="@+id/left_setting_vison_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/setting_version" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/left_setting_vison_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="版本"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="1.0"
+            android:textColor="@color/lineColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/left_setting_line_05"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_setting_vison"
+        android:background="#BABABA" />
+
+    <RelativeLayout
+        android:id="@+id/left_setting_quit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/left_setting_line_05"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:id="@+id/left_setting_back_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/setting_logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/left_setting_back_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="退出"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_setting_quit"
+        android:background="#BABABA" />
+
+</RelativeLayout>

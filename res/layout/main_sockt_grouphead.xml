@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor_low"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+     >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:src="@drawable/chazuo" />
+
+    <TextView
+        android:id="@+id/groupto_sockt"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical|left"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="分组名称" />
+
+    <ImageView
+        android:id="@+id/groupIcon_sockt"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:src="@drawable/down" />
+
+</LinearLayout>

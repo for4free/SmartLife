@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/left_auto_re01"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/backgroundColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/left_auto_re01_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="模式名称"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/left_auto_re01_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/left_auto_re01_txt"
+            android:layout_below="@+id/left_auto_re01_txt"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_item_clolck" />
+
+        <TextView
+            android:id="@+id/left_auto_re01_txt_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_auto_re01_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/left_auto_re01_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="n个响应设备"
+            android:textColor="@color/lineColor" />
+
+    
+    </RelativeLayout>
+
+</LinearLayout>

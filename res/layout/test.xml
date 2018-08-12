@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+ 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+ 
+            <!-- 1 rv_centered="true" rv_type="simpleRipple" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_centered="true" >
+ 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher" />
+            </com.example.smartlife.RippleEffect>
+ 
+            <!-- 2 rv_centered="false" rv_type="simpleRipple" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_centered="false"
+                ripple:rv_type="simpleRipple" >
+ 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher" />
+            </com.example.smartlife.RippleEffect>
+ 
+            <!-- 3 rv_type="doubleRipple" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_type="doubleRipple" >
+ 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher" />
+            </com.example.smartlife.RippleEffect>
+ 
+            <!-- 4 rv_type="rectangle" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_type="doubleRipple" >
+ 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher" />
+            </com.example.smartlife.RippleEffect>
+ 
+            <!-- 5  rv_zoom ="true" rv_ripplePadding ="20dp"  ripple:rv_zoomScale="1.25" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_centered="false"
+                ripple:rv_color="#D91615"
+                ripple:rv_rippleDuration="2000"
+                ripple:rv_ripplePadding="20dp"
+                ripple:rv_zoom="true"
+                ripple:rv_zoomDuration="200"
+                ripple:rv_zoomScale="1.25" >
+ 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher" />
+            </com.example.smartlife.RippleEffect>
+ 
+            <!-- 6 rv_type="simpleRipple" rv_alpha="10" rv_framerate="100" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_alpha="200"
+                ripple:rv_framerate="100"
+                ripple:rv_type="simpleRipple" >
+ 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher" />
+            </com.example.smartlife.RippleEffect>
+ 
+            <!-- 7 rv_type="simpleRipple" rv_alpha="10" rv_framerate="2" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_alpha="200"
+                ripple:rv_framerate="2"
+                ripple:rv_type="simpleRipple" >
+ 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher" />
+            </com.example.smartlife.RippleEffect>
+ 
+            <!-- 8 rv_type="simpleRipple" rv_alpha="10" rv_framerate="2" -->
+ 
+            <com.example.smartlife.RippleEffect
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ripple:rv_alpha="200"
+                ripple:rv_framerate="2"
+                ripple:rv_type="simpleRipple" >
+ 
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#BAC9FF"
+                    android:padding="15dp"
+                    android:text="Button" />
+            </com.example.smartlife.RippleEffect>
+        </LinearLayout>
+    </ScrollView>
+ 
+</LinearLayout>

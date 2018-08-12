@@ -1,0 +1,88 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowTitleSize">50dip</item>
+        <item name="android:windowTitleBackgroundStyle">@color/backgroundColor</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@color/backgroundColor</item>
+    </style>
+
+    <style name="CheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="AutoCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/auto_checkbox_style</item>
+    </style>
+
+    <style name="LightCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/light_checkbox_style</item>
+    </style>
+
+    <!-- 弹出效果 -->
+    <style name="AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/inputdown</item>
+        <item name="android:windowExitAnimation">@anim/outdowntoup</item>
+    </style>
+
+    <!-- SeekBar -->
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/seek_thumb</item>
+        <item name="android:thumbOffset">10.0dip</item>
+    </style>
+
+    <!-- ProgressBar 01 -->
+    <style name="StyleProgressBarMini_01" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item> 
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+    <!-- ProgressBar 02 -->
+    <style name="StyleProgressBarMini_02" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini_02</item>
+    </style>
+    <!-- ProgressBar 03 -->
+    <style name="StyleProgressBarMini_03" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini_03</item>
+    </style>
+    <!-- ProgressBar 04 -->
+    <style name="StyleProgressBarMini_04" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini_04</item>
+    </style>
+    <!-- 自定义旋转圆 -->
+    <style name="myProgressBarStyleLarge">
+
+
+　　                <item name="android:indeterminateDrawable">@drawable/progress_large</item>
+
+
+　　                <item name="android:minWidth">76dip</item>
+
+
+　　                <item name="android:maxWidth">76dip</item>
+
+
+　　                <item name="android:minHeight">76dip</item>
+
+
+　　                <item name="android:maxHeight">76dip</item>
+    </style>
+
+
+</resources>

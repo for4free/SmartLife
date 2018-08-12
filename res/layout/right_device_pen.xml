@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <TextView
+        android:id="@+id/right_device_pen_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:text="设备信息"
+        android:textColor="#41AFAF"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/right_device_pen_line_01"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/right_device_pen_01"
+        android:layout_marginLeft="10dp"
+        android:background="#BABABA" />
+
+    <TextView
+        android:id="@+id/right_device_pen_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/right_device_pen_line_01"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="设备ID:"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/right_device_pen_edit_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/right_device_pen_line_01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/right_device_pen_03"
+        android:background="@color/backgroundColor"
+        android:hint="请输入设备ID"
+        android:singleLine="true"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/right_device_pen_line_02"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/right_device_pen_02"
+        android:layout_marginLeft="10dp"
+        android:background="#BABABA" />
+
+    <TextView
+        android:id="@+id/right_device_pen_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/right_device_pen_line_02"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="显示名称:"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/right_device_pen_edit_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/right_device_pen_line_02"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/right_device_pen_03"
+        android:background="@color/backgroundColor"
+        android:hint="请输入显示名称"
+        android:singleLine="true"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/right_device_pen_line_03"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/right_device_pen_03"
+        android:background="#BABABA" />
+
+    <TextView
+        android:id="@+id/right_device_pen_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/right_device_pen_line_03"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:text="推荐名称"
+        android:textColor="#41AFAF"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/right_device_pen_line_04"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/right_device_pen_04"
+        android:layout_marginLeft="10dp"
+        android:background="#BABABA" />
+
+    <Button
+        android:id="@+id/right_device_pen_btn_01"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/right_device_pen_line_04"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/right_pen_min"
+        android:text="客厅"
+        android:textColor="#BABABA" />
+
+    <Button
+        android:id="@+id/right_device_pen_btn_02"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/right_device_pen_line_04"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/right_device_pen_btn_01"
+        android:background="@drawable/right_pen_min"
+        android:text="卧室"
+        android:textColor="#BABABA" />
+
+    <Button
+        android:id="@+id/right_device_pen_btn_03"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/right_device_pen_line_04"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/right_device_pen_btn_02"
+        android:background="@drawable/right_pen_min"
+        android:text="厨房"
+        android:textColor="#BABABA" />
+
+    <Button
+        android:id="@+id/right_device_pen_btn_04"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/right_device_pen_line_04"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/right_device_pen_btn_03"
+        android:background="@drawable/right_pen_min"
+        android:text="其他"
+        android:textColor="#BABABA" />
+
+    <ImageView
+        android:id="@+id/right_device_pen_line_05"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/right_device_pen_btn_01"
+        android:layout_marginTop="14dp"
+        android:background="#BABABA" />
+
+    <Button
+        android:id="@+id/right_device_pen_btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/right_device_pen_line_05"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/right_pen_max"
+        android:text="添加"
+        android:textColor="#41AFAF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

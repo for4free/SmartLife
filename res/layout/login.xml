@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <TextView
+        android:id="@+id/login_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:text="登  陆"
+        android:textColor="#41AFAF"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/login_line_01"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_above="@+id/login_edit_01"
+        android:background="#BABABA" />
+
+    <EditText
+        android:id="@+id/login_edit_01"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/login_line_02"
+        android:layout_margin="10dp"
+        android:background="@color/backgroundColor"
+        android:gravity="center"
+        android:hint="请输入昵称/账号"
+        android:singleLine="true"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/login_line_02"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/login_edit_02"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#BABABA" />
+
+    <EditText
+        android:id="@+id/login_edit_02"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/login_line_03"
+        android:layout_margin="10dp"
+        android:background="@color/backgroundColor"
+        android:gravity="center"
+        android:singleLine="true"
+        android:hint="请输入密码"
+        android:password="true"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/login_line_03"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_centerInParent="true"
+        android:background="#BABABA" />
+
+    <Button
+        android:id="@+id/login_btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_line_03"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/right_pen_max"
+        android:text="确定"
+        android:textColor="#41AFAF"
+        android:textSize="20dp" />
+    
+    <TextView 
+        android:id="@+id/login_lostpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/green"
+        />
+    <TextView 
+        android:id="@+id/login_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册新用户"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/green"
+        />
+
+</RelativeLayout>
