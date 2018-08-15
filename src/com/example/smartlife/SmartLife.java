@@ -447,8 +447,8 @@ public class SmartLife extends Activity implements OnClickListener,OnTouchListen
 			final String lon = sharedPreferences_air.getString("lon", "120.1325");
 			final String lat = sharedPreferences_air.getString("lat", "36.0103");
 			// 更新天气数据
-			String path ="http://api.caiyunapp.com/v2/kQq6LBc-ueXw2M0d/"+lon+","+lat+"/realtime.json";
-			//山科大的经纬度 36.0103,120.1325   彩云天气token：kQq6LBc-ueXw2M0d 
+			String path ="http://api.caiyunapp.com/v2/xxx/"+lon+","+lat+"/realtime.json";
+			//山科大的经纬度 36.0103,120.1325   彩云天气token：xxx
 			 HttpUtils http = new HttpUtils(10000);//10s超时
 			 http.configCurrentHttpCacheExpiry(5000); // 设置缓存5秒,5秒内直接返回上次成功请求的结果。
 			while (flag) {
