@@ -38,9 +38,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 case REGISTER:
                     RegisterModel bean= (RegisterModel) msg.obj;
                     if (bean.getStatus()==200){
-                        Toast.makeText(getApplicationContext(),"×¢²á³É¹¦£¡",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"æ³¨å†ŒæˆåŠŸï¼",Toast.LENGTH_LONG).show();
                     }else{
-                        Toast.makeText(getApplicationContext(),"×¢²áÊ§°Ü£¡"+bean.getMessage(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"æ³¨å†Œå¤±è´¥ï¼"+bean.getMessage(),Toast.LENGTH_LONG).show();
                     }
                     break;
                 default:
@@ -101,12 +101,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
         String u=username.getText().toString();
         String p=password.getText().toString();
         if (TextUtils.isEmpty(u)||TextUtils.isEmpty(p)){
-            Toast.makeText(getApplicationContext(),"ÕËºÅ»òÃÜÂë²»ÄÜÎª¿Õ£¡",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"è´¦å·æˆ–å¯†ç ä¸èƒ½ä¸ºç©ºï¼",Toast.LENGTH_LONG).show();
             return ;
         }
 
         RequestBody requestBody= new FormEncodingBuilder().add("username",u).add("password",p).build();
-        String url="http://123.206.78.18/api/videoApi/index.php";
+        String url="http://xxx/api/videoApi/index.php";
         Request request=new Request.Builder().url(url).post(requestBody).build();
         mOkHttpClient.newCall(request).enqueue(new Callback() {
             @Override
@@ -129,62 +129,62 @@ public class MainActivity extends Activity implements View.OnClickListener{
         final String u=username.getText().toString();
         final String p=password.getText().toString();
         if (TextUtils.isEmpty(u)||TextUtils.isEmpty(p)){
-            Toast.makeText(getApplicationContext(),"ÕËºÅ»òÃÜÂë²»ÄÜÎª¿Õ£¡",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"è´¦å·æˆ–å¯†ç ä¸èƒ½ä¸ºç©ºï¼",Toast.LENGTH_LONG).show();
             return ;
         }
-        //ÕâÀïÏÈ½øĞĞ×Ô¼º·şÎñÆ÷µÄµÇÂ¼²Ù×÷
-        //×Ô¼º·şÎñÆ÷µÇÂ¼³É¹¦ºóÔÙÖ´ĞĞ»·ĞÅ·şÎñÆ÷µÄµÇÂ¼²Ù×÷
-        EMChatManager.getInstance().login(u, p, new EMCallBack() {//»Øµ÷
+        //è¿™é‡Œå…ˆè¿›è¡Œè‡ªå·±æœåŠ¡å™¨çš„ç™»å½•æ“ä½œ
+        //è‡ªå·±æœåŠ¡å™¨ç™»å½•æˆåŠŸåå†æ‰§è¡Œç¯ä¿¡æœåŠ¡å™¨çš„ç™»å½•æ“ä½œ
+        EMChatManager.getInstance().login(u, p, new EMCallBack() {//å›è°ƒ
             @Override
             public void onSuccess() {
                 runOnUiThread(new Runnable() {
                     public void run() {
                         EMGroupManager.getInstance().loadAllGroups();
                         EMChatManager.getInstance().loadAllConversations();
-                        Toast.makeText(MainActivity.this, "µÇÂ½ÁÄÌì·şÎñÆ÷³É¹¦", Toast.LENGTH_SHORT).show();
-                        Log.e("TAG", "µÇÂ½ÁÄÌì·şÎñÆ÷³É¹¦£¡");
+                        Toast.makeText(MainActivity.this, "ç™»é™†èŠå¤©æœåŠ¡å™¨æˆåŠŸ", Toast.LENGTH_SHORT).show();
+                        Log.e("TAG", "ç™»é™†èŠå¤©æœåŠ¡å™¨æˆåŠŸï¼");
                     }
                 });
             }
 
             @Override
             public void onProgress(int progress, String status) {
-                Log.e("TAG", "µÇÂ½ÁÄÌì·şÎñÆ÷ÖĞ " + "progress:" + progress + " status:" + status);
+                Log.e("TAG", "ç™»é™†èŠå¤©æœåŠ¡å™¨ä¸­ " + "progress:" + progress + " status:" + status);
             }
 
             @Override
             public void onError(int code, String message) {
-                Log.e("TAG", "µÇÂ½ÁÄÌì·şÎñÆ÷Ê§°Ü£¡"+code+"=="+message+"ÓÃ»§Ãû"+u+"ÃÜÂë£º"+p);
+                Log.e("TAG", "ç™»é™†èŠå¤©æœåŠ¡å™¨å¤±è´¥ï¼"+code+"=="+message+"ç”¨æˆ·å"+u+"å¯†ç ï¼š"+p);
             }
         });
     }
 
     private void logout() {
-        //ÕâÀïÏÈ½øĞĞ×Ô¼º·şÎñÆ÷µÄÍË³ö²Ù×÷
-        //×Ô¼º·şÎñÆ÷µÇÂ¼³É¹¦ºóÔÙÖ´ĞĞ»·ĞÅ·şÎñÆ÷µÄÍË³ö²Ù×÷
+        //è¿™é‡Œå…ˆè¿›è¡Œè‡ªå·±æœåŠ¡å™¨çš„é€€å‡ºæ“ä½œ
+        //è‡ªå·±æœåŠ¡å™¨ç™»å½•æˆåŠŸåå†æ‰§è¡Œç¯ä¿¡æœåŠ¡å™¨çš„é€€å‡ºæ“ä½œ
 
-        //´Ë·½·¨ÎªÒì²½·½·¨
+        //æ­¤æ–¹æ³•ä¸ºå¼‚æ­¥æ–¹æ³•
         EMChatManager.getInstance().logout(new EMCallBack() {
             @Override
             public void onSuccess() {
-                Log.e("TAG", "ÍË³öÁÄÌì·şÎñÆ÷³É¹¦£¡");
+                Log.e("TAG", "é€€å‡ºèŠå¤©æœåŠ¡å™¨æˆåŠŸï¼");
                 runOnUiThread(new Runnable() {
                     public void run() {
-                        Toast.makeText(MainActivity.this, "ÍË³öÁÄÌì·şÎñÆ÷³É¹¦", Toast.LENGTH_SHORT).show();
-                        Log.e("TAG", "ÍË³öÁÄÌì·şÎñÆ÷³É¹¦£¡");
+                        Toast.makeText(MainActivity.this, "é€€å‡ºèŠå¤©æœåŠ¡å™¨æˆåŠŸ", Toast.LENGTH_SHORT).show();
+                        Log.e("TAG", "é€€å‡ºèŠå¤©æœåŠ¡å™¨æˆåŠŸï¼");
                     }
                 });
             }
 
             @Override
             public void onProgress(int progress, String status) {
-                Log.e("TAG", "ÍË³öÁÄÌì·şÎñÆ÷ÖĞ " + " progress:" + progress + " status:" + status);
+                Log.e("TAG", "é€€å‡ºèŠå¤©æœåŠ¡å™¨ä¸­ " + " progress:" + progress + " status:" + status);
 
             }
 
             @Override
             public void onError(int code, String message) {
-                Log.e("TAG", "ÍË³öÁÄÌì·şÎñÆ÷Ê§°Ü£¡" + " code:" + code + " message:" + message);
+                Log.e("TAG", "é€€å‡ºèŠå¤©æœåŠ¡å™¨å¤±è´¥ï¼" + " code:" + code + " message:" + message);
 
             }
         });
@@ -193,11 +193,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     private void voice() {
         if (!EMChatManager.getInstance().isConnected())
-            Toast.makeText(this, "Î´Á¬½Óµ½·şÎñÆ÷", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "æœªè¿æ¥åˆ°æœåŠ¡å™¨", Toast.LENGTH_SHORT).show();
         else{
             String toUser=to.getText().toString();
             if (TextUtils.isEmpty(toUser)){
-                Toast.makeText(MainActivity.this, "ÇëÌîĞ´½ÓÊÜ·½ÕËºÅ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "è¯·å¡«å†™æ¥å—æ–¹è´¦å·", Toast.LENGTH_SHORT).show();
                 return ;
             }
             Intent intent = new Intent(MainActivity.this, VoiceCallActivity.class);
@@ -210,12 +210,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     private void video() {
         if (!EMChatManager.getInstance().isConnected()) {
-            Toast.makeText(MainActivity.this, "Î´Á¬½Óµ½·şÎñÆ÷", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "æœªè¿æ¥åˆ°æœåŠ¡å™¨", Toast.LENGTH_SHORT).show();
         }
         else {
             String toUser=to.getText().toString();
             if (TextUtils.isEmpty(toUser)){
-                Toast.makeText(MainActivity.this, "ÇëÌîĞ´½ÓÊÜ·½ÕËºÅ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "è¯·å¡«å†™æ¥å—æ–¹è´¦å·", Toast.LENGTH_SHORT).show();
                 return ;
             }
             Intent intent = new Intent(MainActivity.this, VideoCallActivity.class);
